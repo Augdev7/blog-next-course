@@ -8,6 +8,7 @@ tags:
   - Next.js
   - React
 ---
+
 ## Introdução
 
 Se você já se deparou com o desafio de gerenciar dependências complexas em seu código, provavelmente já ouviu falar sobre injeção de dependências.
@@ -40,9 +41,7 @@ Assim, não precisa ter tudo o que precisa dentro dela própria função, o que 
 
 > Isso vale, não apenas para funções, para objetos também, podendo receber outro objeto…
 
-<Note> 
-  Testando componente no MDX
-</Note>
+<Note>Testando componente no MDX</Note>
 
 ## Quais as vantagens?
 
@@ -68,7 +67,7 @@ Pense nas props (propriedades) do React.js. O objetivo principal das props não 
 
 Vamos criar um componente de `Header`, primeiro da forma "incorreta" e depois vamos aplicar o DI.
 
-```tsx  showLineNumbers {4,5,10-12,14-17} 
+```tsx showLineNumbers {4,5,10-12,14-17}
 import * as S from './styles';
 
 const Header = () => {
@@ -108,7 +107,7 @@ Vamos melhorar isso.
 
 Criando o componente de `Logo`.
 
-```tsx showLineNumbers {1-3,10} 
+```tsx showLineNumbers {1-3,10}
 const Logo = () => {
   return (
     <S.LogoContainer>
@@ -120,7 +119,7 @@ const Logo = () => {
 
 Criando o componente `Profile`.
 
-```tsx showLineNumbers 
+```tsx showLineNumbers
 const Profile = ({ name, email }: { name: string; email: string }) => {
   return (
     <S.ProfileContainer>
@@ -141,7 +140,7 @@ const getItemLocalStorage = (key: string) => {
 
 Agora vamos juntar os "pedaços" no nosso componente de `Header`.
 
-```tsx showLineNumbers {2-3,8,10} 
+```tsx showLineNumbers {2-3,8,10}
 const Header = () => {
   const name = getItemLocalStorage('name') ?? 'unknown';
   const email = getItemLocalStorage('email') ?? 'unknown@email.com';

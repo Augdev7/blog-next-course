@@ -10,11 +10,11 @@ public_folder: /assets/images
 
 publish_mode: editorial_workflow
 
-slug: 
+slug:
   enconding: 'ascii'
   clean_accents: true
 
-collections: 
+collections:
   - name: posts
     label: posts
     extension: mdx
@@ -25,15 +25,27 @@ collections:
     fields:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
       - { label: 'Title', name: 'title', widget: 'string', required: true }
-      - { label: 'Description', name: 'description', widget: 'string', required: true }
+      - {
+          label: 'Description',
+          name: 'description',
+          widget: 'string',
+          required: true
+        }
       - { label: 'Post Image', name: 'image', widget: 'image', required: true }
-      - { label: 'Date', name: 'date', widget: 'datetime', format: 'YYYY-MM-DD hh:mm:ss', required: true }
-      - { label: 'Tags', name: 'tags', widget: 'select', multiple: true,  required: true, options: [
-        'Javascript',
-        'Typescript',
-        'Misc',
-        'React',
-        'Next.js',
-        'Books'
-      ] }
+      - {
+          label: 'Date',
+          name: 'date',
+          widget: 'datetime',
+          format: 'YYYY-MM-DD hh:mm:ss',
+          required: true
+        }
+      - {
+          label: 'Tags',
+          name: 'tags',
+          widget: 'select',
+          multiple: true,
+          required: true,
+          options:
+            ['Javascript', 'Typescript', 'Misc', 'React', 'Next.js', 'Books']
+        }
       - { label: 'Body', name: 'body', widget: 'markdown', required: true }

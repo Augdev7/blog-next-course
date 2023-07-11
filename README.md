@@ -1,8 +1,8 @@
- ## Project developed during training: **Crie um site PWA com Next.js 13, React Server Components e Testes (+SOLID)** 🔥
+## Project developed during training: **Crie um site PWA com Next.js 13, React Server Components e Testes (+SOLID)** 🔥
 
- ### 👉 **Access link**: [here](https://hotm.art/lA0ujDcw)
+### 👉 **Access link**: [here](https://hotm.art/lA0ujDcw)
 
- ---
+---
 
 **Topics covered**
 
@@ -36,10 +36,10 @@ And so much more!
 - 💅 **TailwindCSS** - Rapidly build modern websites without ever leaving your HTML.
 
 ### Other libs
+
 - **ContentLayer**
 - **Rehype**
 - **Remark**
-
 
 ## 🚀 Getting started
 
@@ -57,7 +57,6 @@ To view the project open `http://localhost:3000`.
 3. Commit your changes: `git commit -m 'Add some feature'`;
 4. Push to the branch: `git push origin my-new-feature`.
 
-**After your pull request is merged**, you can safely delete your branch.
----
+## **After your pull request is merged**, you can safely delete your branch.
 
 Made with ♥ by Junior Alves
